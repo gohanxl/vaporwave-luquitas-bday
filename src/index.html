@@ -4,32 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="index.js"></script>
     <title>Document</title>
   </head>
   <body>
     <div class="crt"></div>
-    <div class="aesthetic-windows-95-modal absolute-modal">
-      <img
+    <div id="modal" class="aesthetic-windows-95-modal absolute-modal">
+      <!-- <img
         src="/assets/dolphin.gif"
         class="absolute-img dolphin"
         alt="spinning dolphin"
         srcset=""
-      />
+      /> -->
       <img
         src="/assets/diskSkelly.gif"
         class="absolute-img skelly"
         alt="skelly throwing disc"
         srcset=""
       />
-      <img
-        src="/assets/toilet.gif"
-        class="absolute-img toilet"
-        alt="spinning toilet"
-        srcset=""
-      />
-      <img
+      <!-- <img
         src="/assets/wowowo.gif"
         class="absolute-img wowowo"
+        alt="wobbly thing"
+        srcset=""
+      /> -->
+      <img
+        src="/assets/ballooooOons.gif"
+        class="absolute-img balloons"
         alt="wobbly thing"
         srcset=""
       />
@@ -41,7 +42,7 @@
 
         <div class="aesthetic-windows-95-modal-title-bar-controls">
           <div class="aesthetic-windows-95-button-title-bar">
-            <button>X</button>
+            <button onclick="toggleModal()">X</button>
           </div>
         </div>
       </div>
@@ -51,7 +52,14 @@
         <ul class="absolute-modal-items">
           <li>Sabado 14 de Octubre - Post Cyberia</li>
           <li>23:00hs</li>
-          <li>Mi Casa es tu Casa [Portugal 574 - 4E]</li>
+          <li>
+            <a
+              class="aesthetic-font-modifier-outline-purple"
+              href="https://maps.app.goo.gl/WjCPgRh6VYPKw1qe9"
+              target="_blank"
+              >Mi Casa es tu Casa [Clicka aqui manito]
+            </a>
+          </li>
           <li>Karaoke improvisado???</li>
         </ul>
         <section class="absolute-modal-buttons">
@@ -85,11 +93,20 @@
         </section>
       </div>
     </div>
+    <div id="emojis" class="hidden" onclick="toggleModal()">🤌🤌🤌🤌🤌🤌🤌</div>
     <div class="thingy-container">
       <img
         src="/assets/thingy.gif"
         class="thingy"
         alt="spinning thingy"
+        srcset=""
+      />
+    </div>
+    <div id="arrow" class="arrow-container hidden">
+      <img
+        src="/assets/arrow.gif"
+        class="arrow"
+        alt="spinning arrow"
         srcset=""
       />
     </div>

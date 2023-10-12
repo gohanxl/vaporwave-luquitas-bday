@@ -2,6 +2,20 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
+#emojis {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  font-size: 42px;
+}
+
 .absolute-modal {
   display: flex;
   flex-direction: column;
@@ -79,6 +93,32 @@
 
 .dolphin {
   top: -150px;
+}
+
+.arrow-container {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.arrow {
+  width: 150px;
+  height: 150px;
+  display: block;
+}
+
+.wowowo {
+  width: 100px;
+  bottom: -165px;
+}
+
+.balloons {
+  top: -150px;
+}
+
+.hidden {
+  display: none;
 }
 
 /* Third party */
