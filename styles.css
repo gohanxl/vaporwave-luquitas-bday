@@ -62,7 +62,7 @@ a {
   left: -35px;
   width: 150px;
   height: 150px;
-  background-image: url("/assets/vaporwaveMIc-removebg.png"); /* URL to your image */
+  background-image: url("./assets/vaporwaveMIc-removebg.png"); /* URL to your image */
   background-size: cover;
   z-index: -1;
   opacity: 0.5; /* Adjust the opacity to your preference */
