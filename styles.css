@@ -136,13 +136,52 @@ a {
 }
 body {
   margin: 0;
-  background-size: cover;
+  background-size: contain;
   background-image: url("https://source.unsplash.com/K0U0eSAjFGU");
 }
 @keyframes bgscroll {
   100% {
     background-position: 0% 100%;
   }
+}
+
+@keyframes boot-animation {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  75% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.boot-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  pointer-events: none;
+
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+
+  background-color: black;
+  z-index: 10000;
+}
+
+.boot-animation * {
+  color: #fff;
 }
 
 /* ASTERIKS */
@@ -860,6 +899,7 @@ body {
 }
 
 .aesthetic-windows-xp-loader {
+  box-sizing: content-box;
   width: 150px;
   height: 10px;
   border: 2px solid #b2b2b2;
@@ -1943,4 +1983,8 @@ body {
 .aesthetic-font h5,
 .aesthetic-font h6 {
   font-weight: lighter;
+}
+
+.boot-animation {
+  animation: boot-animation 7s;
 }
